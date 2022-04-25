@@ -1,17 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";   //import React from "react";  <<<=== Importar sempre 
+import ReactDOM  from "react-dom"; //import ReactDOM  from "react-dom";  <<<=== Importar sempre 
+import './style.css';
+import Header from'./Header.js';
+import Footer from "./Footer";
+import MainContent from "./MainContent"
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+function Page() {     //existencia de funçoes facilita ter codigos modulares | camelCase: temporaryName / pascalCase: TemporaryName = <TemporaryName/>
+  return (
+          <div>
+            <Header/>
+            <MainContent/>
+            <Footer/>
+        </div>
+  )
+    
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
+
+
+ReactDOM.render(<Page/>, document.getElementById("root"))

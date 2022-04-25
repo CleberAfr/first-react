@@ -1,0 +1,18 @@
+.nav {
+    display: flex;
+    justify-content: space-between; /* divide objetos nos limites da tela */
+}
+
+.nav-logo{
+width: 100px;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex; /* display: flex; > Alinha os itens da linha ao lado */
+}
+
+.nav-items > li { /* > = torna o objeto a direita dependente do da esquerda*/
+    padding: 10px;
+}
+

@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;500;700&family=Poppins:wght@400;500;600&display=swap');
+
+#root{
+    font-family: poppins;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+}
 .nav {
+    background-color: #2b1e49;
     display: flex;
     justify-content: space-between; /* divide objetos nos limites da tela */
 }
 
 .nav-logo{
-width: 100px;
+width: 150px;
 }
 
 .nav-items {
@@ -16,3 +25,14 @@ width: 100px;
     padding: 10px;
 }
 
+.main-container{
+}
+
+li {
+    padding: 10px;
+}
+
+.footer{
+    display: block;
+    background-color: rgb(191, 202, 211);
+}

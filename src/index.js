@@ -5,7 +5,7 @@ import Header from'./Header.js';
 import Footer from "./Footer";
 import MainContent from "./MainContent"
 
-function Page() {     //existencia de funçoes facilita ter codigos modulares | camelCase: temporaryName / pascalCase: TemporaryName = <TemporaryName/>
+function App() {     //existencia de funçoes facilita ter codigos modulares | camelCase: temporaryName / pascalCase: TemporaryName = <TemporaryName/>
   return (
           <div>
             <Header/>
@@ -20,4 +20,4 @@ function Page() {     //existencia de funçoes facilita ter codigos modulares | 
 
 
 
-ReactDOM.render(<Page/>, document.getElementById("root"))
+ReactDOM.render(<App/>, document.getElementById("root"))
